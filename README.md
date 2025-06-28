@@ -1,4 +1,3 @@
-# notetaker-hibernate
 
 # NoteTaker Web App
 
