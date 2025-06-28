@@ -17,28 +17,28 @@ public class Note
 	private int id;
 	private String title;
 	private String content;
-	private Date addedDate;
+
 	
 	public Note() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Note(int id, String title, String content, Date addedDate) {
+	public Note(int id, String title, String content) {
 		super();
 		this.id = id;
 		this.title = title;
 		this.content = content;
-		this.addedDate = addedDate;
+		
 	}
 	
 	
 
-	public Note(String title, String content, Date addedDate) {
+	public Note(String title, String content) {
 		super();
 		this.title = title;
 		this.content = content;
-		this.addedDate = addedDate;
+		
 	}
 
 	public int getId() {
@@ -65,14 +65,11 @@ public class Note
 		this.content = content;
 	}
 
-	public Date getAddedDate() {
-		return addedDate;
+	@Override
+	public String toString() {
+		return "Note [id=" + id + ", title=" + title + ", content=" + content + "]";
 	}
 
-	public void setAddedDate(Date addedDate) {
-		this.addedDate = addedDate;
-	}
-	
 	
 	
 	

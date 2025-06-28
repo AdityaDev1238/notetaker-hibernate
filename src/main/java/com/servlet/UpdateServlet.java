@@ -28,7 +28,7 @@ public class UpdateServlet extends HttpServlet {
 		int id=Integer.parseInt(request.getParameter("note_id"));
 		String title=request.getParameter("title");
 	    String content=request.getParameter("content");
-	    Note note=new Note(id,title,content,new Date());
+	    Note note=new Note(id,title,content);
 //	    note.setId(id);
 	    NotetakerService service=new NotetakerServiceImp();
 	   // Note n1=service.readNote(id);
